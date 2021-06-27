@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		{% extends 'base.html' %}
+
+		{% block content %}
+
+			<h1>Delete post</h1>
+			<form action="" method="post">{% csrf_token %}
+				<p>Are you sure you want to delete "{{ post.delete }}"?</p>
+				<input type="submit" value="Confirm">
+			</form>
+
+		{% endblock content %}
+	</header>
+	<main>
+
+	</main>
+	
+</body>
+</html>
