@@ -1,1 +1,1 @@
-web:bundle exec rails server -p $PORT
+web: gunicorn pages_project.wsgi --log-file -
